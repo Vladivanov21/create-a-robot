@@ -1,0 +1,225 @@
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.factory-section {
+	border: 2px solid;
+}
+
+#slide-1 {
+	background-color: #fff7d4;
+}
+
+#slide-2 {
+	background-color: #b5cc64;
+	height: 200px;
+}
+
+.link {
+	margin-left: auto;
+}
+
+.img {
+	width:250px;
+	margin-left: auto;
+}
+
+#subtitle_text {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.subtitle {
+	border: 2px solid;
+	margin-right: 80%;
+
+}
+
+.content-wrapper {
+	display: flex;
+	height: 310px;
+}
+
+.robot {
+	flex: 30%;
+	border: 1px solid;
+	margin: 9px 9px 9px 9px;
+	position: relative;
+	background: white;
+}
+
+.description {
+	flex: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#prg_1 {
+	text-align: left;
+	padding-right: 3%;
+}
+
+#prg_2 {
+	text-align: justify;
+	padding-right: 6%;
+}
+
+#prg_3 {
+	text-align: left;
+	padding-right: 9%;
+}
+
+#good_luck {
+	width: 100px;
+}
+
+#par_pic {
+	display: flex;
+}
+
+.writing {
+	border: 1px solid;
+	margin: 9px 125px 9px 40px;
+	background: white;
+}
+
+.eye {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 28px;
+}
+
+#eye_left {
+	left: 190px;
+}
+
+#eye_right {
+	right: 220px;
+}
+
+#head {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  left: 180px;
+}
+
+#mouth {
+	width: 25px;
+	height: 5px;
+	border: 1px solid black;
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    position: absolute;
+    left: 196px;
+    top: 53px;
+
+}
+
+#body {
+  border: 1px solid black;
+  transform: perspective(4px) rotateX(-2deg);
+  margin: 50px;
+  height: 90px;
+  width: 50px;
+  position: absolute;
+  top: 55px;
+  left: 135px;
+  z-index: 2;
+  background: orange;
+}
+
+.hand {
+	border: 1px solid black;
+	background: grey;
+	height: 15px;
+	width: 75px;
+	margin-right: 95%;
+	transform: rotate(90deg);
+	position: absolute;
+	border-radius: 5px;
+	top: 110px;
+}
+
+#hand_left {
+	left: 120px;
+}
+
+#hand_right {
+	left: 225px;
+}
+
+.leg {
+	border: 1px solid black;
+	height: 15px;
+	width: 60px;
+	margin-right: 95%;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 200px;
+	z-index: 1;
+}
+
+#leg_left {
+	left: 165px;
+}
+
+#leg_right {
+	left: 195px;
+}
+
+.rbtName_lbl {
+	position: absolute;
+	bottom: 5px;
+	left: 170px;
+}
+
+#lblCreateRobot {
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+}
+
+.button {
+	position: absolute;
+	bottom: 30px;
+	width: 100px;
+	height: 30px;
+}
+
+#btn1 {
+	left: 60px;
+}
+
+#btn2 {
+	left: 180px;
+	word-wrap: break-word;
+	width: 150px;
+}

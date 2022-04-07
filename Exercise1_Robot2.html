@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercise One</title> 
+	<meta charset="UTF-8">
+	<meta name="description">
+	<link rel="stylesheet" href="Exercise1_Robot.css">
+</head>
+
+<body>
+
+	<header>
+		<h1 id="title">Robot Factory</h1>
+		<a class="link" href="https://www.playtech.com/" target="_blank">
+			<img class="img" src="C:\Users\Vladislav\Documents\School\WEB_Academy\PLaytech_img.jpg">
+		</a>
+	</header>
+
+	<section id="slide-1" class="factory-section">
+		<div class="subtitle">
+			<h3 id="subtitle_text">Basic Robot</h3>
+		</div>
+		<br>
+		<br>
+		<div class="content-wrapper">
+			<div class="robot">
+				<div id="head"></div>
+				<div class="eye" id="eye_left"></div>
+				<div class="eye" id="eye_right"></div>
+				<div id="mouth"></div>
+				<div id="body"></div>
+				<div class="hand" id="hand_left"></div>
+				<div class="hand" id="hand_right"></div>
+				<div class="leg" id="leg_left"></div>
+				<div class="leg" id="leg_right"></div>
+				<div class="rbtName_lbl">
+					<p>Robot name</p>
+				</div>
+				
+			</div>
+			<div class="description">
+				<div class="writing">
+					<p id="prg_1"><strong>P</strong>aragraph text here. Text-align on left. 3% space from right border.Text is only two lines and ends with three dots ... because it is too long. On hover full text is shown as tooltip. First letter is bold.</p>
+				</div>
+				<div class="writing">
+					<p id="prg_2"><em>Paragraph</em> text here. Text justified, 6% from right border. Text is only 2 lines and ends with three dots... because  it too long. On hover full text is shown. First word is italic.</p>
+				</div>
+				<div id="par_pic" class="writing">
+					<img id="good_luck" src="C:\Users\Vladislav\Documents\School\WEB_Academy\good_luck.jpg">
+					<p id="prg_3">Paragraph text here. Text-align on left, 9% from right border. Image on left side.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="slide-2">
+		<div  id="lblCreateRobot">
+			<h3>Create Robot</h3>
+		</div>
+		<hr>
+		<form class="form">
+			<div class="question">
+				<label>Name</label>
+				<input type="text" name="name" value="Robot name">
+			</div>
+			<div class="question">
+				<label>Select Type:</label>
+				<select id="type" name="type">
+					<option value="basic_robot">Basic Robot</option>
+					<option value="small_robot">Small Robot</option>
+				</select>
+			</div>
+			<div class="question">
+				<label>Color Picker:</label>
+				<input type="color" name="color" value="#FFA500">
+			</div>
+			<div class="question">
+				<label>Select Options:</label>
+				<input type="checkbox" id="can_jump" name="can_jump">
+				<label for="can_jump">Can jump</label>
+				<input type="checkbox" id="can_talk" name="can_talk">
+				<label for="can_jump">Can talk</label>
+				<input type="checkbox" id="can_blink" name="can_blink">
+				<label for="can_jump">Can blink</label>
+			</div>
+			<div class="question">
+				<label>Write Comments</label>
+				<textarea></textarea>
+			</div>
+			<button class="button" id="btn1">Create</button>
+			<button class="button" id="btn2">Show Created Robots</button>
+		</form>
+		<hr>
+	</section>
+
+
+</body>
+
+</html>
+
