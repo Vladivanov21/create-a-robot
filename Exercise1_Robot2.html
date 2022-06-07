@@ -3,8 +3,6 @@
 
 <head>
 	<title>Exercise One</title> 
-	<meta charset="UTF-8">
-	<meta name="description">
 	<link rel="stylesheet" href="Exercise1_Robot.css">
 </head>
 
@@ -13,32 +11,33 @@
 	<header>
 		<h1 id="title">Robot Factory</h1>
 		<a class="link" href="https://www.playtech.com/" target="_blank">
-			<img class="img" src="C:\Users\Vladislav\Documents\School\WEB_Academy\PLaytech_img.jpg">
+			<img class="img" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Playtech_logo.svg/1280px-Playtech_logo.svg.png" alt="PlayTech">
 		</a>
 	</header>
 
-	<section id="slide-1" class="factory-section">
-		<div class="subtitle">
+	<section id="slide-1" class="factory-section">  
+		<div class="subtitle">  
 			<h3 id="subtitle_text">Basic Robot</h3>
-		</div>
+		</div>     
 		<br>
 		<br>
 		<div class="content-wrapper">
-			<div class="robot">
-				<div id="head"></div>
-				<div class="eye" id="eye_left"></div>
-				<div class="eye" id="eye_right"></div>
-				<div id="mouth"></div>
-				<div id="body"></div>
-				<div class="hand" id="hand_left"></div>
-				<div class="hand" id="hand_right"></div>
-				<div class="leg" id="leg_left"></div>
-				<div class="leg" id="leg_right"></div>
-				<div class="rbtName_lbl">
-					<p>Robot name</p>
+				<div class="robot">
+					<div id="head"></div>
+					<div class="eye" id="eye_left"></div>
+					<div class="eye eye_right"></div>
+					<div class="mouth"></div>
+					<div class="body"></div>
+					<div class="skirt"></div>
+					<div class="hand" id="hand_left"></div>
+					<div class="hand" id="hand_right"></div>
+					<div class="leg" id="leg_left"></div>
+					<div class="leg" id="leg_right"></div>
+					<div class="bubble bubble-bottom-left"></div>
+					<div class="rbtName_lbl">
+						<p>Robot name</p>
+					</div>
 				</div>
-				
-			</div>
 			<div class="description">
 				<div class="writing">
 					<p id="prg_1"><strong>P</strong>aragraph text here. Text-align on left. 3% space from right border.Text is only two lines and ends with three dots ... because it is too long. On hover full text is shown as tooltip. First letter is bold.</p>
@@ -47,53 +46,68 @@
 					<p id="prg_2"><em>Paragraph</em> text here. Text justified, 6% from right border. Text is only 2 lines and ends with three dots... because  it too long. On hover full text is shown. First word is italic.</p>
 				</div>
 				<div id="par_pic" class="writing">
-					<img id="good_luck" src="C:\Users\Vladislav\Documents\School\WEB_Academy\good_luck.jpg">
+					<img id="good_luck" src="https://media.istockphoto.com/vectors/-vector-id505920740?s=612x612" alt="Good Luck">
 					<p id="prg_3">Paragraph text here. Text-align on left, 9% from right border. Image on left side.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<div class="change_robot">
+		<form class="change_robot_form" onsubmit="return false">
+			<button class="button_robot" id="btn_previous" onclick="plusSlides(-1)" type="submit"> < Previous</button>
+			<button class="button_robot" id="btn_next" onclick="plusSlides(1)" type="submit">Next ></button>
+		</form>
+	</div>
+
 	<section id="slide-2">
-		<div  id="lblCreateRobot">
+		<div id="lblCreateRobot">
 			<h3>Create Robot</h3>
 		</div>
 		<hr>
-		<form class="form">
+		<form class="form" onsubmit="return false">
 			<div class="question">
 				<label>Name</label>
-				<input type="text" name="name" value="Robot name">
+				<input type="text" name="name" value="Robot name" required>
 			</div>
 			<div class="question">
 				<label>Select Type:</label>
-				<select id="type" name="type">
-					<option value="basic_robot">Basic Robot</option>
-					<option value="small_robot">Small Robot</option>
+				<select id="type" name="type" required>
+					<option value="male_robot">Male</option>
+					<option value="female_robot">Female</option>
 				</select>
 			</div>
 			<div class="question">
 				<label>Color Picker:</label>
-				<input type="color" name="color" value="#FFA500">
+				<input type="color" name="color" value="#FFA500" required>
 			</div>
 			<div class="question">
 				<label>Select Options:</label>
-				<input type="checkbox" id="can_jump" name="can_jump">
-				<label for="can_jump">Can jump</label>
-				<input type="checkbox" id="can_talk" name="can_talk">
-				<label for="can_jump">Can talk</label>
-				<input type="checkbox" id="can_blink" name="can_blink">
-				<label for="can_jump">Can blink</label>
+				<div class="lbl-checkbox">
+					<input type="checkbox" id="can_jump" name="can_jump">
+					<label for="can_jump">Can jump</label>
+				</div>
+				<div class="lbl-checkbox">
+					<input type="checkbox" id="can_talk" name="can_talk">
+					<label for="can_talk">Can talk</label>
+				</div>
+				<div class="lbl-checkbox">
+					<input type="checkbox" id="can_blink" name="can_blink">
+					<label for="can_blink">Can blink</label>
+				</div>
 			</div>
 			<div class="question">
 				<label>Write Comments</label>
-				<textarea></textarea>
+				<textarea id="phrase" required></textarea>
 			</div>
-			<button class="button" id="btn1">Create</button>
+			<button class="button" id="btn1" type="submit">Create</button>
 			<button class="button" id="btn2">Show Created Robots</button>
 		</form>
 		<hr>
 	</section>
 
+
+<script src="Robot.js"></script>
 
 </body>
 
