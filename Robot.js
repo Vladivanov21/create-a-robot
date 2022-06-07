@@ -123,16 +123,7 @@ function robot_movements(robot) {
         let talking = setTimeout(() => {
             bubble_speech[bubble_speech.length - 1].style.display = "none";
         }, 10000);
-        talking;
-        clearTimeout(talking);
-        bubble_speech[bubble_speech.length - 1].style.display = "none";
-        form_slide.addEventListener("submit", () => {
-            bubble_speech[bubble_speech.length - 1].style.display = "block";
-            let talking = setTimeout(() => {
-                bubble_speech[bubble_speech.length - 1].style.display = "none";
-            }, 10000);
-            talking;
-        });
+        talking;       
         bubble_speech[bubble_speech.length - 1].textContent = robot.phrase;
     } else {
         bubble_speech[bubble_speech.length - 1].style.display = "none";
